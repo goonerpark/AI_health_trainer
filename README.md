@@ -1,4 +1,4 @@
-![ChickenBroGIF](https://github.com/user-attachments/assets/fa05dbe1-ecba-4a4b-814c-9a4d4ef9dfc2)# AI Health Trainer
+# AI Health Trainer
 
 ## 1. 프로젝트 소개
 

@@ -1,20 +1,161 @@
-<<<<<<< HEAD
-# ai_health_trainer
+# AI Health Trainer
 
-A new Flutter project.
+## 1. 프로젝트 소개
 
-## Getting Started
+### 🎇 개요
+- **프로젝트명**: ML Health Partner <---기존(AI Health Trainer)
+- **개발 기간**: 2024.09 ~ 2024.12
+- **개발 인원**: 1명
+- **핵심 기능**: ML Kit의 Pose Detection을 통해 운동 횟수 측정 및 자세 교정 APP
 
-This project is a starting point for a Flutter application.
+### 🎇 기획 배경 및 기대 효과
+- **주요 타겟층**: 운동에 관심이 있거나 자세교정이 필요한 모든 연령층
+- **기획 배경**: 
+  - 운동을 하던 중 자신이 몇회를 했는지 잊어버리는 경험은 모두가 한번씩은 겪었을 것이라 생각한다.
+  - 그러던중, 자세를 교정해주면서 운동 횟수까지 같이 세주는 어플이 있다면? 이라는 생각에서 ML Health Partner를 기획하게 되었다.
+  - 
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 2. 개발 환경
+![dart](https://camo.githubusercontent.com/5551027c475436787a16caa68a92fc97e7c228ff5809fb362f9d0a9f61acc313/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f646172742d3335373845353f7374796c653d666f722d7468652d6261646765266c6f676f3d64617274266c6f676f436f6c6f723d7768697465)
+![flutter](https://camo.githubusercontent.com/2d9ab5fefe8cc171f36de08ff897c2e03b48f46ad43e22278557ee9953132f26/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f466c75747465722d3036423644343f7374796c653d666f722d7468652d6261646765266c6f676f3d466c7574746572266c6f676f436f6c6f723d7768697465)
+![lottie](https://img.shields.io/badge/lottie-red)
+![MLKit_posedetection](https://img.shields.io/badge/MLKit-pose--detection-blue)
+![Camera](https://img.shields.io/badge/Android-Camera-green)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# AI_health_trainer
->>>>>>> d2be5eb2591f6986efb99c510c3e0c6ae767df22
+
+
+### Spec
+- **IDE**: IntelliJ
+- **Framework**: Spring Boot 3.1.3
+- **Libraries**: Spring Security, Spring Data JPA
+- **Build Tool**: Gradle
+- **Programming Languages**: Java, HTML, CSS, JavaScript, Bootstrap
+- **Template Engine**: Thymeleaf
+- **Version Control**: GitHub
+- **Database**: MySQL
+- **Server**: Apache Tomcat
+
+---
+
+## 3. User Flow 작성
+
+- **Flow Chart**: Client가 웹 사이트 방문 시 흐름을 도식화한 차트.
+
+---
+
+## 4. 기능 명세서
+
+### 🎇 관리자 페이지
+
+#### ✅ 기본 설정
+- 사이트 전체 title 수정
+- 사이트 설명 수정
+- CSS & JS 버전 수정
+- 사이트 규칙 관리
+
+#### ✅ 회원 관리
+- 권한 변경 (Member, Admin)
+- 회원 전체 조회
+- 회원 탈퇴
+
+#### ✅ 게시판 관리
+- 페이지 관련 설정 (한 페이지 내 게시글 수, 하부 페이지 번호 갯수 등)
+- 파일 업로드/다운로드 여부 관리
+
+#### ✅ 게시글 관리
+- 게시글 작성 폼
+- 게시글 삭제
+
+### 🎇 회원
+
+#### ✅ 공통
+- **권한**: ADMIN / MEMBER (가입 시 기본 MEMBER 권한 부여)
+- **등급**: 
+  - 컨퍼런스(하) / 유로파(중) / 챔피언스(상)
+  - 등급 산정 기준: 총 배팅 금액(누적액)
+- **포인트**:
+  - 회원가입 시 100만 유로 지급
+  - 출석 포인트 (1일 1회, 20만 유로)
+  - 광고 시청 포인트 (제한 없음, 2만 유로)
+  - 포인트 상한 5000만 유로 이상 시 졸업 (졸업 보상: 레벨업 및 닉네임 스타일 변경)
+
+#### ✅ 로그인
+- 비밀번호 암호화(hashing)를 통해 DB에 저장
+
+#### ✅ 회원가입
+- ID: 영문, 숫자 조합 (4~16자리)
+- PW: 영문, 숫자, 특수문자 조합 (8~16자리)
+- 이름: 한글 입력 (2~30자리)
+- 닉네임: 영문, 숫자 조합 (4~16자리)
+- E-mail: 이메일 양식으로 입력 제한
+- 모바일: 중복 가입 방지를 위한 정규표현식 검증
+
+#### ✅ ID 찾기
+- 이름, 이메일 입력 받아 조회
+
+#### ✅ 비밀번호 찾기
+- 아이디, 이메일 입력 받아 임시 비밀번호 발송
+
+#### ✅ 마이페이지
+- 회원 정보 조회 및 수정
+- 배팅 내역 조회
+- 작성한 게시글 조회
+
+### 🎇 게시글
+
+#### ✅ 게시글 검색
+- 제목, 작성자, 내용으로 조회
+
+#### ✅ 파일 업로드 & 다운로드
+- 이미지 파일 업로드 가능 (multipart/form-data)
+
+### 🎇 승부 예측 및 배팅
+
+#### ✅ 배팅하기
+- 금액 입력 (만 단위 제한)
+- All-in 기능
+- 중복 배팅 가능
+
+#### ✅ 배팅취소
+- 경기 시작 전까지만 배팅 취소 가능
+
+### 🎇 댓글
+- 댓글 작성 시 글자수 제한 (1~100자)
+
+---
+
+## 5. ERD 작성
+
+- **버전 1 ~ Final**: 엔티티 관계도 설계 및 수정
+
+---
+
+## 6. 테이블 다이어그램
+
+### Member Table
+| 키    | 논리         | 물리       | 도메인     | 타입         | UNIQUE | Null 허용 | 기본값        |
+|-------|--------------|------------|------------|--------------|--------|-----------|---------------|
+| PK    | 회원번호     | m_no       | Long       | BigInt       |        | N         | AUTO_INCREMENT|
+| FK    | 로그인 정보  | l_no       | Long       | BigInt       |        | N         |               |
+| ...   |              |            |            |              |        |           |               |
+
+*(다른 테이블에 대해서도 동일한 포맷으로 작성)*
+
+---
+
+## 7. 역할 분담
+
+- **회원**: 김현수
+- **관리자**: 권윤환
+- **게시글**: 이창진
+- **댓글 + 페이징**: 박병호
+- **승부 예측 및 배팅**: 정호진
+- **프론트**: 신예성
+
+---
+
+## 8. 일정표
+
+- **개발 일정**: 2023.09.04 ~ 2023.09.26

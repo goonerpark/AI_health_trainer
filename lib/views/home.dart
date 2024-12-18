@@ -35,7 +35,6 @@ class Home extends StatelessWidget {
                 ),
                 const SizedBox(height: 40),
 
-                // 푸쉬업 측정 시작하기 버튼
                 _buildGradientButton(
                   context: context,
                   text: '푸쉬업 측정 시작하기',
@@ -49,7 +48,6 @@ class Home extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
 
-                // 숄더프레스 측정 시작하기 버튼
                 _buildGradientButton(
                   context: context,
                   text: '숄더프레스 측정 시작하기',
@@ -68,8 +66,6 @@ class Home extends StatelessWidget {
       ),
     );
   }
-
-  // 공통으로 사용할 버튼 위젯
   Widget _buildGradientButton({
     required BuildContext context,
     required String text,
@@ -87,7 +83,7 @@ class Home extends StatelessWidget {
       child: Ink(
         decoration: BoxDecoration(
           gradient: const LinearGradient(
-            colors: [Color(0xff6A11CB), Color(0xff2575FC)], // 그라데이션 색상
+            colors: [Color(0xff6A11CB), Color(0xff2575FC)],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),

@@ -13,7 +13,7 @@
 - **기획 배경**: 
   - 운동을 하던 중 자신이 몇회를 했는지 잊어버리는 경험은 모두가 한번씩은 겪었을 것이라 생각한다.
   - 그러던중, 자세를 교정해주면서 운동 횟수까지 같이 세주는 어플이 있다면? 이라는 생각에서 ML Health Partner를 기획하게 되었다.
-  - ML Health
+  - ML Health는 자세교정 및 운동 횟수 측정 앱으로 실행 중 잘못된 자세 감지 시 카운트를 하지 않는다
 
 ---
 
@@ -80,13 +80,13 @@
 
 ## 5. 실행결과
 
-### 1. 메인 화면(main.dart)
+### 1. 메인 화면(main.dart,splash_screen.dart)
 <img src="https://github.com/goonerpark/AI_health_trainer/blob/main/main.png"  width="200" height="400"/>
 
 ### 2. 홈 화면(home.dart)
 <img src="https://github.com/goonerpark/AI_health_trainer/blob/main/home.png"  width="200" height="400"/>
 
-### 3. 운동 화면
+### 3. 운동 화면(pose_detection_view.dart, camera_view.dart)
 - **1. 푸쉬업**
 - 
   <img src="https://github.com/goonerpark/AI_health_trainer/blob/main/pushup.png"  width="200" height="400"/>

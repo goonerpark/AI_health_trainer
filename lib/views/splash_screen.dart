@@ -10,7 +10,7 @@ class SplashScreen extends StatelessWidget {
     final size = MediaQuery.of(context).size;
 
     return Scaffold(
-      backgroundColor: const Color(0xffF5F5F5), // 기존 배경색 유지
+      backgroundColor: const Color(0xffF5F5F5), 
       body: Container(
         width: double.infinity,
         child: Column(
@@ -27,18 +27,18 @@ class SplashScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 40),
-            // 타이틀 텍스트
+            
             const Text(
               'Ai Health Partner',
               style: TextStyle(
                 fontSize: 36.0,
                 fontWeight: FontWeight.bold,
-                color: Color(0xff273338), // 진한 색상
+                color: Color(0xff273338), 
                 letterSpacing: -0.2,
               ),
             ),
             const SizedBox(height: 20),
-            // 설명 텍스트
+            
             Container(
               width: size.width * 0.8,
               child: const Text(
@@ -56,9 +56,9 @@ class SplashScreen extends StatelessWidget {
             // Start Now 버튼
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.zero, // 패딩 제거
+                padding: EdgeInsets.zero, 
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(30), // 둥근 버튼
+                  borderRadius: BorderRadius.circular(30), 
                 ),
               ),
               onPressed: () {
@@ -70,7 +70,7 @@ class SplashScreen extends StatelessWidget {
               child: Ink(
                 decoration: BoxDecoration(
                   gradient: const LinearGradient(
-                    colors: [Color(0xff6A11CB), Color(0xff2575FC)], // 그라데이션 색상
+                    colors: [Color(0xff6A11CB), Color(0xff2575FC)], 
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                   ),

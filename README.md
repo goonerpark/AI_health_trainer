@@ -97,3 +97,9 @@
   
 ### 4. 결과 화면(main.dart)
 <img src="https://github.com/goonerpark/AI_health_trainer/blob/main/result.png"  width="200" height="400"/>
+
+---
+
+## 6. 실행영상
+[앱 전체 실행 영상](https://youtube.com/shorts/9giaXzgxCP4?feature=share)
+[앱 푸쉬업 동작 영상](https://youtube.com/shorts/qOATnleaAzw?feature=share)

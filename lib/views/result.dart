@@ -32,7 +32,7 @@ class ResultPage extends StatelessWidget {
               style: const TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.bold,
-                color: Color(0xff273338), // 텍스트 색상
+                color: Color(0xff273338), 
               ),
               textAlign: TextAlign.center,
             ),

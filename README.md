@@ -13,7 +13,7 @@
 - **기획 배경**: 
   - 운동을 하던 중 자신이 몇회를 했는지 잊어버리는 경험은 모두가 한번씩은 겪었을 것이라 생각한다.
   - 그러던중, 자세를 교정해주면서 운동 횟수까지 같이 세주는 어플이 있다면? 이라는 생각에서 ML Health Partner를 기획하게 되었다.
-  - 
+  - ML Health
 
 ---
 
@@ -28,7 +28,7 @@
 
 ## 3. User Flow 작성
 
-![userflow](https://github.com/goonerpark/AI_health_trainer/blob/main/%EC%9C%A0%EC%A0%80%ED%94%8C%EB%A1%9C%EC%9A%B0.png)
+<img src="https://github.com/goonerpark/AI_health_trainer/blob/main/%EC%9C%A0%EC%A0%80%ED%94%8C%EB%A1%9C%EC%9A%B0.png"  width="200" height="400"/>
 
 ---
 
@@ -79,3 +79,21 @@
 ---
 
 ## 5. 실행결과
+
+### 1. 메인 화면(main.dart)
+<img src="https://github.com/goonerpark/AI_health_trainer/blob/main/main.png"  width="200" height="400"/>
+
+### 2. 홈 화면(home.dart)
+<img src="https://github.com/goonerpark/AI_health_trainer/blob/main/home.png"  width="200" height="400"/>
+
+### 3. 운동 화면
+- **1. 푸쉬업**
+- 
+  <img src="https://github.com/goonerpark/AI_health_trainer/blob/main/pushup.png"  width="200" height="400"/>
+  
+- **2. 숄더프레스**
+- 
+  <img src="https://github.com/goonerpark/AI_health_trainer/blob/main/ohp.png"  width="200" height="400"/>
+  
+### 4. 결과 화면(main.dart)
+<img src="https://github.com/goonerpark/AI_health_trainer/blob/main/result.png"  width="200" height="400"/>

@@ -53,7 +53,6 @@ class SplashScreen extends StatelessWidget {
               ),
             ),
             const Spacer(),
-            // Start Now 버튼
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 padding: EdgeInsets.zero, 
